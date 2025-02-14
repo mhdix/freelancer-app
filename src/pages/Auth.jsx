@@ -1,8 +1,14 @@
+import SendOtpForm from "../features/authentication/SendOtpForm";
 
-const auth = () => {
+const Auth = () => {
   return (
-    <div></div>
-  )
-}
+    <div className="w-full sm:max-w-sm">
+      <SendOtpForm />
+    </div>
+  );
+};
 
-export default auth
+export default Auth;
+
+// set otp
+// check otp
