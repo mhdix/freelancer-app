@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "vazir", "sans-sherif";
+  --color-primary-self: 74, 109, 255;
+  --color-secondary-self: #ffc107;
+}
+
+@layer base {
+ .container {
+    margin: 0 auto;
+ }
+}
+
+@font-face {
+  font-family: "vazir";
+  font-weight: 400;
+  src: url("../public/fonts/Vazirmatn-Regular.woff2");
+}
+
+@font-face {
+  font-family: "vazir";
+  font-weight: 700;
+  src: url("../public/fonts/Vazirmatn-Bold.woff2");
+}
+
+@font-face {
+  font-family: "vazir";
+  font-weight: 900;
+  src: url("../public/fonts/Vazirmatn-Black.woff2");
+}
