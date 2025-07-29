@@ -10,13 +10,31 @@
     background-color: rgb(238, 238, 238);
     font-family: "vazir";
   }
- .container {
+  .container {
     margin: 0 auto;
     padding: 0 1rem;
- }
- label {
-  display: block;
- }
+  }
+  label {
+    display: block;
+  }
+}
+@layer components {
+  .textField__input {
+    @apply bg-white w-full py-3 px-4 rounded-xl text-gray-900 border border-blue-200 outline-none focus:outline-none hover:border-blue-500 focus-within:border-blue-500 focus:bg-white transition-all duration-300 ease-in-out focus:shadow-lg focus:shadow-blue-200;
+  }
+  .btn {
+    @apply px-3 py-1 font-bold rounded-xl transition-all duration-300;
+  }
+  .btn--primary {
+    @apply px-4 py-3 bg-blue-500 text-gray-50 hover:bg-blue-700 shadow-lg shadow-blue-300;
+  }
+  .btn--secondary {
+    @apply px-4 py-3 bg-gray-300 text-green-700 border border-green-600 shadow-lg ;
+  }
+  .badge {
+  }
+  .badge--primary {
+  }
 }
 
 @font-face {

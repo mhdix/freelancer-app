@@ -14,13 +14,13 @@ export default function SendOtpForm() {
             id="phoneNumber"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
-            className="bg-white w-full py-3 px-4 rounded-xl text-gray-900 border border-blue-200 outline-none focus:outline-none hover:border-blue-500 focus-within:border-blue-500 focus:bg-white transition-all duration-300 ease-in-out focus:shadow-lg focus:shadow-blue-200"
+            className="textField__input"
             type="text"
           />
         </div>
-        <button className="px-4 py-2 cursor-pointer font-bold bg-blue-600 text-white w-full rounded-xl transition-all duration-300 hover:bg-blue-500 shadow-sm shadow-blue-300 focus:outline-blue-600 ">
-          ارسال کد تایید
-        </button>
+        <button className="btn btn--primary w-full">ارسال کد تایید</button>
+
+        <button className="btn btn--secondary w-full">ارسال کد تایید</button>
       </form>
     </div>
   );
