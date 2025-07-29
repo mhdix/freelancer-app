@@ -3,9 +3,13 @@ import React, { useState } from "react";
 export default function SendOtpForm() {
   const [phoneNumber, setPhoneNumber] = useState("");
 
+  const sendOtpHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="">
-      <form className="space-y-8">
+    <div>
+      <form className="space-y-8" onSubmit={sendOtpHandler}>
         <div>
           <label htmlFor="phoneNumber" className="mb-1">
             شماره موبایل
@@ -18,9 +22,9 @@ export default function SendOtpForm() {
             type="text"
           />
         </div>
-        <button className="btn btn--primary w-full">ارسال کد تایید</button>
-
-        <button className="btn btn--secondary w-full">ارسال کد تایید</button>
+        <button type="submit" className="btn btn--primary w-full">
+          ارسال کد تایید
+        </button>
       </form>
     </div>
   );
